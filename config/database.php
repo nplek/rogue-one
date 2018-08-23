@@ -77,6 +77,16 @@ return [
             'charset' => 'utf8',
             'prefix' => '',
         ],
+        'kbuild' => [
+            'driver' => 'sqlsrv',
+            'host' => env('ROGUE_DBHOST','localhost'),
+            'port' => env('ROGUE_DBPORT','1433'),
+            'database' => env('ROGUE_DBTABLE','TEST_KBUILD'),
+            'username' => env('ROGUE_DBUSER','USER'),
+            'password' => env('ROGUE_DBPASS','PASSWORD'),
+            'charset' => 'utf8',
+            'prefix' => '',
+        ],
 
     ],
 
